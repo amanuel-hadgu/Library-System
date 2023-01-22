@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="" />
+    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Library-System.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Controller/BookCommandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Domain/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Repository/BookCommandRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Service/BookCommandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Service/Dto/BookAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Service/Dto/BookDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Service/IBookCommandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksCommandService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksCommandService/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +41,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/BooksCommandServiceApplication.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -49,6 +68,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2Keu0C5R0ojhD4NhzJt3JJVZr9H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -98,6 +118,9 @@
       <workItem from="1674347147431" duration="7130000" />
       <workItem from="1674360509852" duration="98000" />
       <workItem from="1674360664607" duration="321000" />
+      <workItem from="1674363128383" duration="363000" />
+      <workItem from="1674363501085" duration="243000" />
+      <workItem from="1674364236574" duration="33000" />
     </task>
     <servers />
   </component>
