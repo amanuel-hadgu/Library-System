@@ -1,4 +1,4 @@
-package com.project.BorrowingsService.service.DTOs;
+package com.project.BorrowingsService.service.Dto;
 
 import lombok.*;
 
@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class BorrowStartingDTO {
+public class BorrowStartingDto {
     private long borrowingNumber;
     private String bookIsbn;
     private String customerNumber;
