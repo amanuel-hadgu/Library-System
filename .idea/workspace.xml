@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Library-System.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Controller/BookCommandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Domain/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Repository/BookCommandRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Service/BookCommandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Service/Dto/BookAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Service/Dto/BookDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Service/IBookCommandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksCommandService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksCommandService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Controller/BorrowingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Controller/BorrowingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Repository/BorrowingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Repository/BorrowingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/BorrowingsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/BorrowingsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/BorrowingsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/BorrowingsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +40,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -87,7 +83,14 @@
     &quot;spring.configuration.checksum&quot;: &quot;94dece1c2a2389010a0d66bfec616cfc&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BooksCommandServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,6 +105,13 @@
     <configuration name="BooksCommandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BooksCommandService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BooksCommandService.BooksCommandServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowingsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BorrowingsService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BorrowingsService.BorrowingsServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

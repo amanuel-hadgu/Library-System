@@ -17,18 +17,29 @@ public class BorrowingsServiceImpl implements BorrowingsService{
 
     @Autowired
    private  BorrowingDAO borrowingDAO;
-    @Autowired
-    private ModelMapper modelMapper;
+
+    @Override
+    public BorrowingDto getBorrowing(long borrowingNumber) {
+    return null;
+    }
 
     @Override
     public List<BorrowingDto> getBorrowings() {
+        return null;
+    }
 
+    @Override
+    public BorrowingDto addBorrowing(BorrowingDto borrowingDTO) {
+        return null;
+    }
 
+    @Override
+    public BorrowingDto updateBorrowing(long borrowingNumber, BorrowingDto borrowingDto) {
+        return null;
+    }
 
-//    @Override
-//    public List<BorrowingsDto> getBorrowings() {
-//        //List<Borrowing> changeDto= BorrowingsAdapter.getBorrowingsDTOFromBorrowings();
-//
-//        return borrowingDAO.findAll();
-//    }
+    @Override
+    public BorrowingDto deleteBurrowing(long borrowingNumber) {
+        return null;
+    }
 }
