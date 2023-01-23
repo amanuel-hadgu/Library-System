@@ -1,7 +1,9 @@
 package com.project.BorrowingsService;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class BorrowingsServiceApplication {
@@ -10,4 +12,8 @@ public class BorrowingsServiceApplication {
 		SpringApplication.run(BorrowingsServiceApplication.class, args);
 	}
 
+	@Bean
+	public ModelMapper modelMapper() {
+		return new ModelMapper();
+	}
 }
