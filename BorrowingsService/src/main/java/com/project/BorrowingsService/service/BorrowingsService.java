@@ -3,19 +3,21 @@ package com.project.BorrowingsService.service;
 
 import com.project.BorrowingsService.service.Dto.BorrowingDto;
 
+import java.util.List;
+
 
 public interface BorrowingsService {
 
-//    public BorrowingDTO getBorrowing(long borrowingNumber); // Natu
+    public BorrowingDto getBorrowing(long borrowingNumber); // Natu
 
     public List<BorrowingDto> getBorrowings(); // Luwam
 
-//    public BorrowingDTO addBorrowing(BorrowingDTO borrowingDTO); //Weini
-public BorrowingDto addBorrowing(BorrowingDto borrowingDTO);
-//
-//    public BorrowingDTO updateBorrowing(long borrowingNumber, BorrowingDTO borrowingDTO); // Miki
+    public BorrowingDto addBorrowing(BorrowingDto borrowingDTO);  //Weini
 
-//    public BorrowingDTO deleteBurrowing(long borrowingNumber); // Abi
+    public BorrowingDto updateBorrowing(long borrowingNumber, BorrowingDto borrowingDto); // Miki
+
+
+    public BorrowingDto deleteBurrowing(long borrowingNumber); // Abi
 
 
 
