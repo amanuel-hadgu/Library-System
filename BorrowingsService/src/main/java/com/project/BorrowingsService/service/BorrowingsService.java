@@ -1,12 +1,15 @@
 package com.project.BorrowingsService.service;
 
 
+import com.project.BorrowingsService.service.Dto.BorrowingDto;
+
+import java.util.List;
 
 public interface BorrowingsService {
 
 //    public BorrowingDTO getBorrowing(long borrowingNumber); // Natu
 
-//    public BorrowingsDTO getBorrowings(); // Luwam
+    public List<BorrowingDto> getBorrowings(); // Luwam
 
 //    public BorrowingDTO addBorrowing(BorrowingDTO borrowingDTO); //Weini
 //
