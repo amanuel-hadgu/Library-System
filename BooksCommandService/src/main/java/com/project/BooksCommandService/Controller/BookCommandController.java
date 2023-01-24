@@ -26,15 +26,12 @@ public class BookCommandController {
     }
 
 
-    //just checking new
-    //hello
-    @DeleteMapping("/delete")
+
+    @DeleteMapping("/delete/{isbn}")
     public ResponseEntity<?> deleteBook(@PathVariable long isbn){
        BookDto bookDto = iBookCommandService.deleteBook(isbn);
        return new ResponseEntity<>(bookDto,HttpStatus.OK);
     }
-   //Just for Checking Natu
-    @Autowired
-    private IBookCommandService getiBookCommandService;
+
 
 }

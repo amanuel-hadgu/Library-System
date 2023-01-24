@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class BookCommandService implements IBookCommandService{
+public class BookCommandServiceImp implements IBookCommandService{
 
     @Autowired
     private BookCommandRepo bookCommandRepo;
