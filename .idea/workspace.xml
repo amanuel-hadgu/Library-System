@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksCommandService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksCommandService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Controller/BookCommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Controller/BookCommandController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +218,7 @@
       <workItem from="1674525518427" duration="665000" />
       <workItem from="1674527154832" duration="748000" />
       <workItem from="1674583956565" duration="1045000" />
-      <workItem from="1674593792373" duration="1065000" />
+      <workItem from="1674593792373" duration="1912000" />
     </task>
     <servers />
   </component>
