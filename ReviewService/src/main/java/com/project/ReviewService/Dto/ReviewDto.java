@@ -5,6 +5,6 @@ public class ReviewDto {
  private String description;
  private String isbn;
  private Integer rating;
- private String customerNumber;
+ private String customerName;
 
 }

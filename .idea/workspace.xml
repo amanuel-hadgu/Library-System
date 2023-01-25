@@ -31,20 +31,7 @@
     <setting file="file://$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/BooksCommandServiceApplication.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
-      </map>
-    </option>
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,6 +56,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -151,9 +142,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BooksQueryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BooksQueryService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BooksQueryService.BooksQueryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BorrowingsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BorrowingsService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BorrowingsService.BorrowingsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CustomerService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.CustomerService.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ReviewService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.ReviewService.ReviewServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -217,6 +229,7 @@
       <workItem from="1674527154832" duration="748000" />
       <workItem from="1674583956565" duration="1045000" />
       <workItem from="1674593792373" duration="2022000" />
+      <workItem from="1674607596567" duration="7677000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1674600531168</created>
