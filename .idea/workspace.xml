@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated">
-      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/contoller/BookQueryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/dto/BookQueryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/Dto/ReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/Dto/ReviewDto.java" afterDir="false" />
-    </list>
+    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -238,7 +229,7 @@
       <workItem from="1674527154832" duration="748000" />
       <workItem from="1674583956565" duration="1045000" />
       <workItem from="1674593792373" duration="2022000" />
-      <workItem from="1674607596567" duration="6025000" />
+      <workItem from="1674607596567" duration="7677000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1674600531168</created>
