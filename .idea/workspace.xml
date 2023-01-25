@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Miki" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/BooksCommandServiceApplication.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Keu0C5R0ojhD4NhzJt3JJVZr9H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "5d597778d37d12fbeaf0b3e5a569c933"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Diffblue Cover.Write tests for package Controller (2)">
+    <configuration name="BookCommandControllerTest.testAddBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BooksCommandService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.BooksCommandService.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.BooksCommandService.Controller" />
+      <option name="MAIN_CLASS_NAME" value="com.project.BooksCommandService.Controller.BookCommandControllerTest" />
+      <option name="METHOD_NAME" value="testAddBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookCommandControllerTest.testDeleteBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BooksCommandService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.BooksCommandService.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.BooksCommandService.Controller" />
+      <option name="MAIN_CLASS_NAME" value="com.project.BooksCommandService.Controller.BookCommandControllerTest" />
+      <option name="METHOD_NAME" value="testDeleteBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookCommandControllerTest.testUpdateBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BooksCommandService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.BooksCommandService.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.BooksCommandService.Controller" />
+      <option name="MAIN_CLASS_NAME" value="com.project.BooksCommandService.Controller.BookCommandControllerTest" />
+      <option name="METHOD_NAME" value="testUpdateBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BooksCommandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BooksCommandService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BooksCommandService.BooksCommandServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowingsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BorrowingsService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BorrowingsService.BorrowingsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Write tests for package Controller (2)" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="BorrowingsService" />
+      <settings run-config-name="Write tests for package Controller (2)" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>package</selection-scope>
+        <selected-element key="com.project.BorrowingsService.Controller" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for package Controller" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="BooksCommandService" />
+      <settings run-config-name="Write tests for package Controller" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>package</selection-scope>
+        <selected-element key="com.project.BooksCommandService.Controller" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for package " type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="BorrowingsService" />
+      <settings run-config-name="Write tests for package " include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>package</selection-scope>
+        <selected-element key="" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookCommandControllerTest.testDeleteBook" />
+        <item itemvalue="JUnit.BookCommandControllerTest.testUpdateBook" />
+        <item itemvalue="JUnit.BookCommandControllerTest.testAddBook" />
+        <item itemvalue="Diffblue Cover.Write tests for package " />
+        <item itemvalue="Diffblue Cover.Write tests for package " />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="" />
+      <created>1674347144611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674347144611</updated>
+      <workItem from="1674347147431" duration="7130000" />
+      <workItem from="1674360509852" duration="98000" />
+      <workItem from="1674360664607" duration="321000" />
+      <workItem from="1674363128383" duration="363000" />
+      <workItem from="1674363501085" duration="243000" />
+      <workItem from="1674364236574" duration="33000" />
+      <workItem from="1674519111198" duration="218000" />
+      <workItem from="1674519674967" duration="352000" />
+      <workItem from="1674520110180" duration="252000" />
+      <workItem from="1674520404261" duration="211000" />
+      <workItem from="1674525518427" duration="665000" />
+      <workItem from="1674527154832" duration="748000" />
+      <workItem from="1674583956565" duration="1045000" />
+      <workItem from="1674593792373" duration="2022000" />
+    </task>
+    <task id="LOCAL-00001" summary="updated">
+      <created>1674600531168</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674600531168</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+  </component>
+</project>
