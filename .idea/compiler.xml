@@ -2,14 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+<<<<<<< HEAD
  
       <profile default="true" name="Default" enabled="true" />
  
+=======
+      <profile default="true" name="Default" enabled="true" />
+>>>>>>> team2
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BorrowingsService" />
+<<<<<<< HEAD
  
         <module name="CustomerService" />
         <module name="BooksQueryService" />
@@ -26,10 +31,19 @@
       <module name="CustomerService" target="17" />
       <module name="ReviewService" target="17" />
  
+=======
+        <module name="BooksQueryService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BooksQueryService" target="17" />
+      <module name="BorrowingsService" target="17" />
+>>>>>>> team2
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+<<<<<<< HEAD
       <module name="BooksCommandService" options="-parameters" />
  
       <module name="BooksQueryService" options="-parameters" />
@@ -37,6 +51,10 @@
       <module name="CustomerService" options="-parameters" />
       <module name="ReviewService" options="-parameters" />
  
+=======
+      <module name="BooksQueryService" options="-parameters" />
+      <module name="BorrowingsService" options="-parameters" />
+>>>>>>> team2
     </option>
   </component>
 </project>
