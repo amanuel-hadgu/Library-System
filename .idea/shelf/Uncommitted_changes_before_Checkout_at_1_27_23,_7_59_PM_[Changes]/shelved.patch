@@ -1,0 +1,261 @@
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,12 +4,31 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated" />
++    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated">
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/controller/BooksQueryController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/repository/BooksQueryRepository.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeEventDTO.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeListener.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryService.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryServiceImp.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookAdapter.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookDTO.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewAdapter.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewDTO.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/BooksQueryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksQueryService/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/domain/Book.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="CodeStyleSettingsInfer">
++    <option name="done" value="true" />
++  </component>
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+@@ -56,6 +75,9 @@
+       </MavenGeneralSettings>
+     </option>
+   </component>
++  <component name="ProjectCodeStyleSettingsMigration">
++    <option name="version" value="2" />
++  </component>
+   <component name="ProjectId" id="2Keu0C5R0ojhD4NhzJt3JJVZr9H" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -69,12 +91,13 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+     "WebServerToolWindowFactoryState": "false",
++    "last_opened_file_path": "/Users/amanuel/IdeaProjects/Library-System",
+     "nodejs_package_manager_path": "npm",
+     "project.structure.last.edited": "Modules",
+     "project.structure.proportion": "0.0",
+     "project.structure.side.proportion": "0.0",
+-    "settings.editor.selected.configurable": "preferences.pluginManager",
+-    "spring.configuration.checksum": "5d597778d37d12fbeaf0b3e5a569c933"
++    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
++    "spring.configuration.checksum": "4f5607c82d2b57fd8270464c3a9961ea"
+   }
+ }]]></component>
+   <component name="RunDashboard">
+@@ -84,7 +107,7 @@
+       </set>
+     </option>
+   </component>
+-  <component name="RunManager" selected="Diffblue Cover.Write tests for package Controller (2)">
++  <component name="RunManager" selected="Diffblue Cover.Write tests for package Controller">
+     <configuration name="BookCommandControllerTest.testAddBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="BooksCommandService" />
+       <extension name="coverage">
+@@ -151,6 +174,13 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="BooksQueryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
++      <module name="BooksQueryService" />
++      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BooksQueryService.BooksQueryServiceApplication" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <configuration name="BorrowingsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+       <module name="BorrowingsService" />
+       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BorrowingsService.BorrowingsServiceApplication" />
+@@ -158,6 +188,38 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
++      <module name="CustomerService" />
++      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.CustomerService.CustomerServiceApplication" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ReviewServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
++      <module name="ReviewService" />
++      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.ReviewService.ReviewServiceApplication" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Write tests for class Review" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
++      <module name="BooksQueryService" />
++      <settings run-config-name="Write tests for class Review" include-system-env-vars="true">
++        <jvm-args />
++        <selection-scope>class</selection-scope>
++        <selected-element key="com.project.BooksQueryService.domain.Review" />
++      </settings>
++      <method v="2" />
++    </configuration>
++    <configuration name="Write tests for package  (2)" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
++      <module name="BooksCommandService" />
++      <settings run-config-name="Write tests for package  (2)" include-system-env-vars="true">
++        <jvm-args />
++        <selection-scope>package</selection-scope>
++        <selected-element key="" />
++      </settings>
++      <method v="2" />
++    </configuration>
+     <configuration name="Write tests for package Controller (2)" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+       <module name="BorrowingsService" />
+       <settings run-config-name="Write tests for package Controller (2)" include-system-env-vars="true">
+@@ -176,22 +238,13 @@
+       </settings>
+       <method v="2" />
+     </configuration>
+-    <configuration name="Write tests for package " type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+-      <module name="BorrowingsService" />
+-      <settings run-config-name="Write tests for package " include-system-env-vars="true">
+-        <jvm-args />
+-        <selection-scope>package</selection-scope>
+-        <selected-element key="" />
+-      </settings>
+-      <method v="2" />
+-    </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Diffblue Cover.Write tests for package  (2)" />
++        <item itemvalue="Diffblue Cover.Write tests for class Review" />
+         <item itemvalue="JUnit.BookCommandControllerTest.testDeleteBook" />
+         <item itemvalue="JUnit.BookCommandControllerTest.testUpdateBook" />
+         <item itemvalue="JUnit.BookCommandControllerTest.testAddBook" />
+-        <item itemvalue="Diffblue Cover.Write tests for package " />
+-        <item itemvalue="Diffblue Cover.Write tests for package " />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -217,6 +270,9 @@
+       <workItem from="1674527154832" duration="748000" />
+       <workItem from="1674583956565" duration="1045000" />
+       <workItem from="1674593792373" duration="2022000" />
++      <workItem from="1674611885181" duration="40000" />
++      <workItem from="1674612240276" duration="46000" />
++      <workItem from="1674612298926" duration="5599000" />
+     </task>
+     <task id="LOCAL-00001" summary="updated">
+       <created>1674600531168</created>
+@@ -246,4 +302,8 @@
+     <MESSAGE value="updated" />
+     <option name="LAST_COMMIT_MESSAGE" value="updated" />
+   </component>
++  <component name="XSLT-Support.FileAssociations.UIState">
++    <expand />
++    <select />
++  </component>
+ </project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	
++++ b/.idea/compiler.xml	
+@@ -2,41 +2,33 @@
+ <project version="4">
+   <component name="CompilerConfiguration">
+     <annotationProcessing>
+- 
+       <profile default="true" name="Default" enabled="true" />
+- 
+       <profile name="Maven default annotation processors profile" enabled="true">
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+         <module name="BorrowingsService" />
+- 
+-        <module name="CustomerService" />
+         <module name="BooksQueryService" />
++        <module name="CustomerService" />
+         <module name="ReviewService" />
+- 
+         <module name="BooksCommandService" />
+       </profile>
+     </annotationProcessing>
+     <bytecodeTargetLevel>
+       <module name="BooksCommandService" target="17" />
+- 
+       <module name="BooksQueryService" target="17" />
+-      <module name="BorrowingsService" target="17" />
++      <module name="BorrowingsService" target="11" />
+       <module name="CustomerService" target="17" />
+       <module name="ReviewService" target="17" />
+- 
+     </bytecodeTargetLevel>
+   </component>
+   <component name="JavacSettings">
+     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+       <module name="BooksCommandService" options="-parameters" />
+- 
+       <module name="BooksQueryService" options="-parameters" />
+       <module name="BorrowingsService" options="-parameters" />
+       <module name="CustomerService" options="-parameters" />
+       <module name="ReviewService" options="-parameters" />
+- 
+     </option>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	
++++ b/.idea/modules.xml	
+@@ -3,13 +3,11 @@
+   <component name="ProjectModuleManager">
+     <modules>
+       <module fileurl="file://$PROJECT_DIR$/BooksCommandService/BooksCommandService.iml" filepath="$PROJECT_DIR$/BooksCommandService/BooksCommandService.iml" />
+- 
+       <module fileurl="file://$PROJECT_DIR$/BooksQueryService/BooksQueryService.iml" filepath="$PROJECT_DIR$/BooksQueryService/BooksQueryService.iml" />
+       <module fileurl="file://$PROJECT_DIR$/BorrowingsService/BorrowingsService.iml" filepath="$PROJECT_DIR$/BorrowingsService/BorrowingsService.iml" />
+       <module fileurl="file://$PROJECT_DIR$/CustomerService/CustomerService.iml" filepath="$PROJECT_DIR$/CustomerService/CustomerService.iml" />
+       <module fileurl="file://$PROJECT_DIR$/.idea/Library-System.iml" filepath="$PROJECT_DIR$/.idea/Library-System.iml" />
+       <module fileurl="file://$PROJECT_DIR$/ReviewService/ReviewService.iml" filepath="$PROJECT_DIR$/ReviewService/ReviewService.iml" />
+- 
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/domain/Book.java
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/domain/Book.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/domain/Book.java
+--- a/BooksQueryService/src/main/java/com/project/BooksQueryService/domain/Book.java	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/domain/Book.java	
+@@ -1,5 +1,6 @@
+ package com.project.BooksQueryService.domain;
+ 
++import jakarta.persistence.Id;
+ import lombok.*;
+ import org.springframework.data.mongodb.core.mapping.Document;
+ 
+@@ -10,6 +11,7 @@
+ @ToString
+ @Document
+ public class Book {
++    @Id
+     private String isbn;
+     private String title;
+     private String description;

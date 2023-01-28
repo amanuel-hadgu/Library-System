@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated" />
+=======
+    <list default="true" id="9af783e9-1b2b-4963-9ad4-a008afd88280" name="Changes" comment="" />
+>>>>>>> team2
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -49,6 +54,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+=======
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/BooksCommandServiceApplication.java" root0="SKIP_INSPECTION" />
+  </component>
+>>>>>>> team2
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -56,6 +66,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="2Keu0C5R0ojhD4NhzJt3JJVZr9H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -75,6 +86,12 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "5d597778d37d12fbeaf0b3e5a569c933"
+=======
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "nodejs_package_manager_path": "npm"
+>>>>>>> team2
   }
 }]]></component>
   <component name="RunDashboard">
@@ -84,6 +101,7 @@
       </set>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Diffblue Cover.Write tests for package Controller (2)">
     <configuration name="BookCommandControllerTest.testAddBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksCommandService" />
@@ -134,19 +152,34 @@
       </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
+=======
+  <component name="RunManager" selected="Spring Boot.BorrowingsServiceApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BorrowingsService" />
+>>>>>>> team2
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+<<<<<<< HEAD
+=======
+      <module name="BorrowingsService" />
+>>>>>>> team2
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="BooksCommandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BooksCommandService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BooksCommandService.BooksCommandServiceApplication" />
+=======
+    <configuration name="BooksQueryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BooksQueryService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BooksQueryService.BooksQueryServiceApplication" />
+>>>>>>> team2
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,6 +191,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Write tests for package Controller (2)" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
       <module name="BorrowingsService" />
       <settings run-config-name="Write tests for package Controller (2)" include-system-env-vars="true">
@@ -245,5 +279,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated" />
     <option name="LAST_COMMIT_MESSAGE" value="updated" />
+=======
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+>>>>>>> team2
   </component>
 </project>
