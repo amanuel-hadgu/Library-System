@@ -1,0 +1,359 @@
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryServiceImp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryServiceImp.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryServiceImp.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryServiceImp.java	
+@@ -0,0 +1,57 @@
++package com.project.BooksQueryService.service;
++
++import com.project.BooksQueryService.domain.Book;
++import com.project.BooksQueryService.repository.BooksQueryRepository;
++import com.project.BooksQueryService.service.dto.BookAdapter;
++import com.project.BooksQueryService.service.dto.BookDTO;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Service;
++
++import java.util.Optional;
++
++@Service
++public class BooksQueryServiceImp implements BooksQueryService{
++
++    @Autowired
++    private BooksQueryRepository booksQueryRepository;
++
++    public void BooksQueryService(BooksQueryRepository booksQueryRepository) {
++        this.booksQueryRepository = booksQueryRepository;
++    }
++
++    @Override
++    public void add(BookDTO bookDTO) {
++        Book book = BookAdapter.fromDTO(bookDTO);
++        booksQueryRepository.save(book);
++    }
++
++    @Override
++    public void delete(String isbn) {
++        booksQueryRepository.deleteById(isbn);
++
++    }
++
++    @Override
++    public BookDTO get(String isbn) {
++        return null;
++    }
++
++    @Override
++    public void update(String isbn, BookDTO bookDTO) {
++        Optional<Book> optionalBook = booksQueryRepository.findById(isbn);
++        if(optionalBook.isPresent()) {
++            Book book = optionalBook.get();
++            book.setIsbn(bookDTO.getIsbn());
++            book.setTitle(bookDTO.getTitle());
++            book.setDescription(bookDTO.getDescription());
++            book.setAuthor(bookDTO.getAuthor());
++            book.setReview(bookDTO.getReview());
++            booksQueryRepository.save(book);
++        }
++    }
++
++    @Override
++    public void handle(BookChangeEventDTO bookChangeEventDTO) {
++
++    }
++}
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/repository/BooksQueryRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/repository/BooksQueryRepository.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/repository/BooksQueryRepository.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/repository/BooksQueryRepository.java	
+@@ -0,0 +1,9 @@
++package com.project.BooksQueryService.repository;
++
++import com.project.BooksQueryService.domain.Book;
++import org.springframework.data.mongodb.repository.MongoRepository;
++import org.springframework.stereotype.Repository;
++
++@Repository
++public interface BooksQueryRepository extends MongoRepository<Book, String> {
++}
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryService.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryService.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BooksQueryService.java	
+@@ -0,0 +1,16 @@
++package com.project.BooksQueryService.service;
++
++import com.project.BooksQueryService.repository.BooksQueryRepository;
++import com.project.BooksQueryService.service.dto.BookDTO;
++
++public interface BooksQueryService {
++    void add(BookDTO bookDTO);
++
++    void delete(String isbn);
++
++    BookDTO get(String isbn);
++
++    void update(String isbn, BookDTO bookDTO);
++
++    void handle(BookChangeEventDTO bookChangeEventDTO);
++}
+Index: BooksQueryService/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/pom.xml b/BooksQueryService/pom.xml
+--- a/BooksQueryService/pom.xml	
++++ b/BooksQueryService/pom.xml	
+@@ -45,7 +45,12 @@
+ 			<artifactId>spring-boot-starter-test</artifactId>
+ 			<scope>test</scope>
+ 		</dependency>
+-	</dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-activemq</artifactId>
++            <version>2.7.8</version>
++        </dependency>
++    </dependencies>
+ 
+ 	<build>
+ 		<plugins>
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeListener.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeListener.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeListener.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeListener.java	
+@@ -0,0 +1,31 @@
++package com.project.BooksQueryService.service;
++
++import com.fasterxml.jackson.core.JsonProcessingException;
++import com.fasterxml.jackson.databind.ObjectMapper;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.jms.annotation.JmsListener;
++import org.springframework.stereotype.Component;
++
++@Component
++public class BookChangeListener {
++    @Autowired
++    private BooksQueryService booksQueryService;
++
++    public BookChangeListener(BooksQueryService booksQueryService) {
++        this.booksQueryService = booksQueryService;
++    }
++
++    @JmsListener(destination = "bookchange")
++    public void receiveMessage(final String bookChangeEventDTOString) {
++
++        try {
++            ObjectMapper objectMapper = new ObjectMapper();
++            BookChangeEventDTO bookChangeEventDTO = objectMapper.readValue(bookChangeEventDTOString, BookChangeEventDTO.class);
++            System.out.println("JMS receiver received message:" + bookChangeEventDTOString);
++            booksQueryService.handle(bookChangeEventDTO);
++        } catch (JsonProcessingException e) {
++            e.printStackTrace();
++        }
++    }
++
++}
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/controller/BooksQueryController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/controller/BooksQueryController.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/controller/BooksQueryController.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/controller/BooksQueryController.java	
+@@ -0,0 +1,22 @@
++package com.project.BooksQueryService.controller;
++
++import com.project.BooksQueryService.service.BooksQueryService;
++import com.project.BooksQueryService.service.dto.BookDTO;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.http.HttpStatus;
++import org.springframework.http.ResponseEntity;
++import org.springframework.web.bind.annotation.GetMapping;
++import org.springframework.web.bind.annotation.PathVariable;
++import org.springframework.web.bind.annotation.RestController;
++
++@RestController
++public class BooksQueryController {
++    @Autowired
++    private BooksQueryService booksQueryService;
++
++    @GetMapping("/books/{isbn}")
++    public ResponseEntity<?> get(@PathVariable String isbn){
++        BookDTO bookDto = booksQueryService.get(isbn);
++        return new ResponseEntity<>(bookDto, HttpStatus.OK);
++    }
++}
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeEventDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeEventDTO.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeEventDTO.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/BookChangeEventDTO.java	
+@@ -0,0 +1,17 @@
++package com.project.BooksQueryService.service;
++
++import com.project.BooksQueryService.service.dto.BookDTO;
++import lombok.AllArgsConstructor;
++import lombok.Getter;
++import lombok.NoArgsConstructor;
++import lombok.Setter;
++
++@Getter
++@Setter
++@AllArgsConstructor
++@NoArgsConstructor
++public class BookChangeEventDTO {
++    private String change;
++    private BookDTO book;
++
++}
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookAdapter.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookAdapter.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookAdapter.java	
+@@ -0,0 +1,27 @@
++package com.project.BooksQueryService.service.dto;
++
++import com.project.BooksQueryService.domain.Book;
++
++public class BookAdapter {
++    public static BookDTO toDTO(Book book) {
++        BookDTO bookDTO = new BookDTO();
++        bookDTO.setIsbn(book.getIsbn());
++        bookDTO.setTitle(book.getTitle());
++        bookDTO.setDescription(book.getDescription());
++        bookDTO.setAuthor(book.getAuthor());
++        bookDTO.setReview(book.getReview());
++
++        return bookDTO;
++    }
++
++    public static Book fromDTO(BookDTO bookDTO) {
++        Book book = new Book();
++        book.setIsbn(bookDTO.getIsbn());
++        book.setTitle(bookDTO.getTitle());
++        book.setDescription(bookDTO.getDescription());
++        book.setAuthor(bookDTO.getAuthor());
++        book.setReview(bookDTO.getReview());
++
++        return book;
++    }
++}
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewAdapter.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewAdapter.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewAdapter.java	
+@@ -0,0 +1,25 @@
++package com.project.BooksQueryService.service.dto;
++
++import com.project.BooksQueryService.domain.Review;
++
++public class ReviewAdapter {
++    public static ReviewDTO toDTO(Review review) {
++        ReviewDTO reviewDTO = new ReviewDTO();
++        reviewDTO.setIsbn(review.getIsbn());
++        reviewDTO.setRating(review.getRating());
++        reviewDTO.setDescription(review.getDescription());
++        reviewDTO.setCustomerName(review.getCustomerName());
++
++        return reviewDTO;
++    }
++
++    public static Review fromDTO(ReviewDTO reviewDTO) {
++        Review review = new Review();
++        review.setIsbn(reviewDTO.getIsbn());
++        review.setRating(reviewDTO.getRating());
++        review.setDescription(reviewDTO.getDescription());
++        review.setCustomerName(reviewDTO.getCustomerName());
++
++        return review;
++    }
++}
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookDTO.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookDTO.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/BookDTO.java	
+@@ -0,0 +1,17 @@
++package com.project.BooksQueryService.service.dto;
++
++import com.project.BooksQueryService.domain.Review;
++import lombok.*;
++
++@NoArgsConstructor
++@AllArgsConstructor
++@Getter
++@Setter
++@ToString
++public class BookDTO {
++    private String isbn;
++    private String title;
++    private String description;
++    private String author;
++    private Review review;
++}
+Index: BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewDTO.java b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewDTO.java
+new file mode 100644
+--- /dev/null	
++++ b/BooksQueryService/src/main/java/com/project/BooksQueryService/service/dto/ReviewDTO.java	
+@@ -0,0 +1,16 @@
++package com.project.BooksQueryService.service.dto;
++
++import lombok.*;
++
++@NoArgsConstructor
++@AllArgsConstructor
++@Getter
++@Setter
++@ToString
++public class ReviewDTO {
++    private String isbn;
++    private int rating;
++    private String customerName;
++    private String description;
++
++}
